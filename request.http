@@ -1,0 +1,50 @@
+### update Percent
+POST http://localhost:5000/updatePercent
+Content-Type: application/json
+
+{
+    "percent": 20
+}
+
+###  update Participant
+POST http://localhost:5000/updateParticipant
+Content-Type: application/json
+
+{
+    "participant": 200
+}
+
+### updateData - both - local
+# POST http://18.117.89.140:5000/updateData
+POST http://localhost:5000/updateData
+Content-Type: application/json
+
+{
+    "participant": 5,
+    "percent": 15
+}
+
+### Get Data - local
+GET http://localhost:5000/getData
+
+
+
+### Live API - update Percent
+POST http://18.117.89.140:5000/updatePercent
+Content-Type: application/json
+
+{
+    "percent": 10
+}
+
+
+### update Participant - live
+POST http://18.117.89.140:5000/updateParticipant
+Content-Type: application/json
+
+{
+    "participant": 100
+}
+
+### Get Data - live
+GET http://18.117.89.140:5000/getData
